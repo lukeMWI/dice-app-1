@@ -54,7 +54,7 @@ export default class Die extends React.Component {
 				<div className="modifier">
 					<p>Modifier</p>
 					<button className="mod-val" onClick={ this.toggleModifierSign }>{ this.state.modifierSign }</button>
-					<input type="text" name="modifier" onChange={ this.handleModifierInputChange }></input>
+					<input type="number" min="0" name="modifier" onChange={ this.handleModifierInputChange }></input>
 					<button className="add-to-roll" onClick={ this.addModifier }>Add to roll</button>
 					<p className="modified-roll">Modified Roll: { this.state.modifiedRoll }</p>
 				</div>
