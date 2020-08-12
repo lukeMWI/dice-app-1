@@ -1,0 +1,91 @@
+* {
+	cursor: url('../img/temp-sword-cursor.png'), auto !important;
+}
+
+/*////// Typeface //////*/
+p, header, button {
+	font-family: 'Eagle Lake';
+}
+
+/*////// Header //////*/
+.header-wrapper {
+	background-color: lightgrey;
+	border: 1px solid black;
+	text-align: center;
+}
+header {
+	font-size: 24px;
+}
+
+/*////// Dice //////*/
+.dice-flex {
+	background-color: lightgrey;
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-around;
+}
+.dice-wrapper {
+	padding: 30px 0;
+	text-align: center;
+}
+.number {
+	margin: 15px 0;
+}
+@media (max-width: 992px) {
+	.dice-flex {
+		flex-wrap: wrap;
+	}
+	.dice-wrapper {
+		flex: 0 0 50%;
+	}
+}
+@media (max-width: 400px) {
+	.dice-wrapper {
+		flex: 0 0 100%;
+	}
+}
+
+/*////// Button //////*/
+button {
+	border-radius: 5px;
+	background-color: gold;
+}
+button:focus {
+	outline: none;
+}
+button:active {
+	background-color: #000;
+	color: gold;
+}
+.roll-button {
+	margin-bottom: 30px;
+}
+
+/*////// Modifier //////*/
+.modifier {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+}
+.modifier > p {
+	margin-bottom: 10px;
+	flex: 0 0 100%;
+}
+.mod-val {
+	width: 20%;
+}
+.modifier > input {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-left: 2%;
+	text-align: center;
+	width: 78%;
+}
+.modifier > input:focus {
+	outline: none;
+}
+.add-to-roll {
+	flex: 0 0 100%;
+	margin: 5px 0 10px;
+}
