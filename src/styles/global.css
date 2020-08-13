@@ -3,7 +3,7 @@
 }
 
 /*////// Typeface //////*/
-p, header, button {
+header, p, h5, button {
 	font-family: 'Eagle Lake';
 }
 
@@ -14,7 +14,8 @@ p, header, button {
 	text-align: center;
 }
 header {
-	font-size: 24px;
+	font-size: 28px;
+	padding: 15px 0;
 }
 
 /*////// Dice //////*/
@@ -25,11 +26,12 @@ header {
 	justify-content: space-around;
 }
 .dice-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 25%;
+	align-items: center;
 	padding: 30px 0;
 	text-align: center;
-}
-.number {
-	margin: 15px 0;
 }
 @media (max-width: 992px) {
 	.dice-flex {
@@ -58,10 +60,15 @@ button:active {
 	color: gold;
 }
 .roll-button {
-	margin-bottom: 30px;
+	margin: 30px 0;
 }
 
 /*////// Modifier //////*/
+.modified-roll {
+	flex: 0 0 100%;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
 .modifier {
 	display: flex;
 	flex-wrap: wrap;
@@ -71,8 +78,9 @@ button:active {
 .modifier > p {
 	margin-bottom: 10px;
 	flex: 0 0 100%;
+	font-style: italic;
 }
-.mod-val {
+.modifier-sign {
 	width: 20%;
 }
 .modifier > input {
@@ -84,10 +92,6 @@ button:active {
 }
 .modifier > input:focus {
 	outline: none;
-}
-.add-to-roll {
-	flex: 0 0 100%;
-	margin: 5px 0 10px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
