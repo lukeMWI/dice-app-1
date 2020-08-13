@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DieImage from "./DieImage";
-import RollButton from "./RollButton";
+import DiceButtons from "./DiceButtons";
 import Modifier from "./Modifier";
 
 const Die = ({sides}) => {
@@ -14,8 +14,8 @@ const Die = ({sides}) => {
 
 	return (
 		<div className="dice-wrapper">
-			<DieImage src={getImagePath()}/>
-			<RollButton rollDice={ () =>  rollDice() }/>
+			<DieImage src={getImagePath()} />
+			<DiceButtons rollDice={ () =>  rollDice() } />
 			<Modifier rollResult={ rollResult } />
 		</div>
 	);
