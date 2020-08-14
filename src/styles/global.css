@@ -1,10 +1,16 @@
 * {
-	cursor: url('../img/temp-sword-cursor.png'), auto !important;
+	cursor: url('../img/sword-cursor-2.png'), auto !important;
 }
 
 /*////// Typeface //////*/
 header, p, h5, button {
 	font-family: 'Eagle Lake';
+}
+
+/*////// Page Wrap //////*/
+.page-wrap {
+	background-color: #aaa;
+	height: 100vh;
 }
 
 /*////// Header //////*/
@@ -14,8 +20,13 @@ header, p, h5, button {
 	text-align: center;
 }
 header {
-	font-size: 28px;
+	font-size: 36px;
 	padding: 15px 0;
+}
+.wall {
+	background-image: url('../img/wall-shadow.png');
+	background-size: cover;
+	height: 200px;
 }
 
 /*////// Dice //////*/
